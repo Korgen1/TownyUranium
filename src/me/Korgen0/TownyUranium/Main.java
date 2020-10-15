@@ -15,7 +15,6 @@ public class Main extends JavaPlugin{
 	
 	@Override
 		public void onEnable() {
-		//run on startup / reloads
 		
 		getServer().getPluginManager().registerEvents(new UraniumCheck(), this);
 		
@@ -24,7 +23,6 @@ public class Main extends JavaPlugin{
 	
 	@Override
 	public void onDisable() {
-		//runs on shutdowns / reloads / disabled
 		
 		
 		
@@ -33,14 +31,12 @@ public class Main extends JavaPlugin{
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (label.equalsIgnoreCase("tuversion")) {
 			if (sender instanceof Player) {
-				//player
-				Player player = (Player) sender;
-				player.sendMessage(ChatColor.RED + "Towny Uranium version" + ChatColor.AQUA + " 1.0.1 " + ChatColor.RED + "by" + ChatColor.AQUA +" Korgen0");
+				//player, dont do anything
 				return true;
 			}
 			else {
 				//console
-				sender.sendMessage(ChatColor.RED + "Towny Uranium version 1.0.1 by Korgen0");
+				sender.sendMessage(ChatColor.RED + "Towny Uranium version 1.0.4 by Korgen0");
 				return true;
 			}
 		}

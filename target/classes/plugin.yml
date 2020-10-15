@@ -1,8 +1,8 @@
 main: me.Korgen0.TownyUranium.Main
 name: TownyUranium
-version: 1.0.3
+version: 1.0.4
 author: Korgen0
-api-version: 1.16
+
 
 commands:
   tuversion:
